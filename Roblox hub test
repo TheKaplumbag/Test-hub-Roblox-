@@ -9,8 +9,8 @@ SaveConfig = false
 ConfigFolder = nil
 IntroEnabled = true
 IntroText = "This is intro"
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
+IntroIcon = nil
+Icon = https://media.discordapp.net/attachments/1138377138475642932/1288968232350257265/HubThumbnail.png?ex=66f71cb6&is=66f5cb36&hm=d79af648dcd7704373b2111a3026095784bc3a04b4246294f2e0c1b47b0e7e00&
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 local Tab = Window:MakeTab({
