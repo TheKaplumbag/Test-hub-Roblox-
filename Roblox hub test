@@ -1,0 +1,49 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Test hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = "Test UI"
+HidePremium = false
+SaveConfig = false
+ConfigFolder = nil
+IntroEnabled = true
+IntroText = "This is intro"
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+local Tab = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = "Test tab"
+Icon = <string> - The icon of the tab.
+PremiumOnly = false
+]]
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+
+--[[
+Name = "Test section"
+]]
+
+Tab:AddButton({
+	Name = "Button",
+	Callback = function()
+      		print("Printed")
+  	end    
+})
+
+--[[
+Name = "Button"
+Callback = <function> - The function of the button.
+]]
+
+OrionLib:Init()
+
+OrionLib:Destroy()
