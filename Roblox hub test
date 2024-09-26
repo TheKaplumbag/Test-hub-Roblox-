@@ -45,5 +45,3 @@ Callback = <function> - The function of the button.
 ]]
 
 OrionLib:Init()
-
-OrionLib:Destroy()
