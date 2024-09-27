@@ -5,8 +5,8 @@ local Window = OrionLib:MakeWindow({Name = "Test hub", HidePremium = false, Save
 --[[
 Name = "Test UI"
 HidePremium = false
-SaveConfig = false
-ConfigFolder = nil
+SaveConfig = true
+ConfigFolder = "OrionTest"
 IntroEnabled = true
 IntroText = "This is intro"
 IntroIcon = nil
