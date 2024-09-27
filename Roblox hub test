@@ -21,7 +21,7 @@ local Tab = Window:MakeTab({
 
 --[[
 Name = "Test tab"
-Icon = https://media.discordapp.net/attachments/1138377138475642932/1288968232350257265/HubThumbnail.png?ex=66f71cb6&is=66f5cb36&hm=d79af648dcd7704373b2111a3026095784bc3a04b4246294f2e0c1b47b0e7e00&
+Icon = nil
 PremiumOnly = false
 ]]
 local Section = Tab:AddSection({
@@ -33,14 +33,14 @@ Name = "Test section"
 ]]
 
 Tab:AddButton({
-	Name = "Button",
+	Name = "Fly Gui v3",
 	Callback = function()
-      		print("Printed")
+      	loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FLY-GUI-V3-18636"))()
   	end    
 })
 
 --[[
-Name = "Button"
+Name = "Fly"
 Callback = <function> - The function of the button.
 ]]
 
