@@ -40,15 +40,15 @@ Tab:AddButton({
 })
 
 Tab:AddButton({
-	Name = "Fly Gui v3",
+	Name = "Prizzlife script",
 	Callback = function()
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
-  	end    
+                OrionLib:MakeNotification({
+	                Name = "Successful",
+	                Content = "Prizzlife script successfully exected",
+	                Image = "rbxassetid://4483345998",
+	                Time = 5
 })
-
---[[
-Name = "Fly"
-Callback = <function> - The function of the button.
-]]
+        end
 
 OrionLib:Init()
