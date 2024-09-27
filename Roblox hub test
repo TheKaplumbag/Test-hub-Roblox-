@@ -39,6 +39,13 @@ Tab:AddButton({
   	end    
 })
 
+Tab:AddButton({
+	Name = "Fly Gui v3",
+	Callback = function()
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+  	end    
+})
+
 --[[
 Name = "Fly"
 Callback = <function> - The function of the button.
