@@ -5,8 +5,8 @@ local Window = OrionLib:MakeWindow({Name = "Test hub", HidePremium = false, Save
 --[[
 Name = "Test UI"
 HidePremium = false
-SaveConfig = true
-ConfigFolder = "OrionTest"
+SaveConfig = false
+ConfigFolder = nil
 IntroEnabled = true
 IntroText = "This is intro"
 IntroIcon = nil
@@ -14,9 +14,9 @@ Icon = nil
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 local Tab = Window:MakeTab({
-	Name = "Tab 1",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+        Name = "Tab 1",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
 })
 
 --[[
@@ -25,7 +25,7 @@ Icon = nil
 PremiumOnly = false
 ]]
 local Section = Tab:AddSection({
-	Name = "Section"
+        Name = "Section"
 })
 
 --[[
@@ -33,10 +33,10 @@ Name = "Test section"
 ]]
 
 Tab:AddButton({
-	Name = "Fly Gui v3",
-	Callback = function()
-      	        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FLY-GUI-V3-18636"))()
-  	end    
+        Name = "Fly Gui v3",
+        Callback = function()
+                loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FLY-GUI-V3-18636"))()
+        end    
 })
 
 --[[
@@ -45,15 +45,16 @@ Callback = <function> - The function of the button.
 ]]
 
 Tab:AddButton({
-	Name = "Prizzlife script",
-	Callback = function()
+        Name = "Prizzlife script",
+        Callback = function()
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
                 OrionLib:MakeNotification({
-	                Name = "Successful",
-	                Content = "Prizzlife script successfully exected",
-	                Image = "rbxassetid://4483345998",
-	                Time = 5
-               end
+                        Name = "Successful",
+                        Content = "Prizzlife script successfully executed",
+                        Image = "rbxassetid://4483345998",
+                        Time = 5
+                        })
+                end
 })
 
 --[[
