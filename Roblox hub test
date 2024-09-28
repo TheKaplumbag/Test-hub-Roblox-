@@ -14,13 +14,13 @@ Icon = nil
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 local Tab = Window:MakeTab({
-        Name = "Tab 1",
+        Name = "Prison life scripts",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
 })
 
 --[[
-Name = "Test tab"
+Name = "Prison life"
 Icon = nil
 PremiumOnly = false
 ]]
@@ -29,7 +29,7 @@ local Section = Tab:AddSection({
 })
 
 --[[
-Name = "Test section"
+Name = "Prison life section"
 ]]
 
 Tab:AddButton({
