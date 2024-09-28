@@ -10,7 +10,7 @@ ConfigFolder = nil
 IntroEnabled = true
 IntroText = "This is intro"
 IntroIcon = nil
-Icon = nil
+Icon = "rbxassetid://7177899044"
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 local Tab = Window:MakeTab({
