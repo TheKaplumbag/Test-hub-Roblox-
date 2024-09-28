@@ -39,6 +39,11 @@ Tab:AddButton({
   	end    
 })
 
+--[[
+Name = "Fly Gui v3"
+Callback = <function> - The function of the button.
+]]
+
 Tab:AddButton({
 	Name = "Prizzlife script",
 	Callback = function()
@@ -50,5 +55,10 @@ Tab:AddButton({
 	                Time = 5
                end
 })
+
+--[[
+Name = "Prizzlife script"
+Callback = <function> - The function of the button.
+]]
 
 OrionLib:Init()
