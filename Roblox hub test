@@ -20,12 +20,14 @@ local Tab = Window:MakeTab({
 })
 
 --[[
-Name = "Prison life"
-Icon = nil
+Name = "Prison life",
+Icon = "rbxassetid://811846959",
 PremiumOnly = false
 ]]
 local Section = Tab:AddSection({
-        Name = "Prison life"
+        Name = "Prison life",
+        Icon = "rbxassetid://811846959",
+        PremiumOnly = false
 })
 
 --[[
