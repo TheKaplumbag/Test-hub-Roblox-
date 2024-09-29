@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "My hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Test hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 --[[
 Name = "Test UI"
@@ -10,28 +10,26 @@ ConfigFolder = nil
 IntroEnabled = true
 IntroText = "This is intro"
 IntroIcon = nil
-Icon = "rbxassetid://7177899044"
+Icon = nil
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 local Tab = Window:MakeTab({
-        Name = "Prison life scripts",
+        Name = "Tab 1",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
 })
 
 --[[
-Name = "Prison life",
-Icon = "rbxassetid://811846959",
+Name = "Test tab"
+Icon = nil
 PremiumOnly = false
 ]]
 local Section = Tab:AddSection({
-        Name = "Prison life",
-        Icon = "rbxassetid://811846959",
-        PremiumOnly = false
+        Name = "Section"
 })
 
 --[[
-Name = "Prison life section"
+Name = "Test section"
 ]]
 
 Tab:AddButton({
@@ -69,5 +67,33 @@ Tab:AddButton({
 Name = "Prizzlife script"
 Callback = <function> - The function of the button.
 ]]
+
+local Tab = Window:MakeTab({
+        Name = "Military life",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+ })
+ 
+ local Section = Tab:AddSection({
+        Name = "Section"
+)}
+
+Tab:AddButton({
+        Name = "Fly Gui v3",
+        Callback = function()
+                local args = {
+    [1] = "rbxassetid://16455735450",
+    [2] = "XP",
+    [3] = 3
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.HelpInfo.ShopFrame.SeasonPass.ClaimReward:FireServer(unpack(args))
+                        Name = "Successful",
+                        Content = "Fly Gui v3 is successfully executed",
+                        Image = "rbxassetid://4483345998",
+                        Time = 5
+                        })
+        end    
+})
 
 OrionLib:Init()
