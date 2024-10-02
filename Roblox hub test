@@ -2,35 +2,15 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 
 local Window = OrionLib:MakeWindow({Name = "Test hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
---[[
-Name = "Test UI"
-HidePremium = false
-SaveConfig = false
-ConfigFolder = nil
-IntroEnabled = true
-IntroText = "This is intro"
-IntroIcon = nil
-Icon = nil
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
 local Tab = Window:MakeTab({
         Name = "Tab 1",
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
 })
 
---[[
-Name = "Test tab"
-Icon = nil
-PremiumOnly = false
-]]
 local Section = Tab:AddSection({
         Name = "Section"
 })
-
---[[
-Name = "Test section"
-]]
 
 Tab:AddButton({
         Name = "Fly Gui v3",
@@ -45,11 +25,6 @@ Tab:AddButton({
         end    
 })
 
---[[
-Name = "Fly Gui v3"
-Callback = <function> - The function of the button.
-]]
-
 Tab:AddButton({
         Name = "Prizzlife script",
         Callback = function()
@@ -63,11 +38,6 @@ Tab:AddButton({
                 end
 })
 
---[[
-Name = "Prizzlife script"
-Callback = <function> - The function of the button.
-]]
-
 local Tab = Window:MakeTab({
         Name = "Military life",
         Icon = "rbxassetid://4483345998",
@@ -76,12 +46,12 @@ local Tab = Window:MakeTab({
 
  local Section = Tab:AddSection({
         Name = "Section"
-)}
+})
 
 Tab:AddButton({
         Name = "Fly Gui v3",
         Callback = function()
-            game:GetService("Players").LocalPlayer.PlayerGui.HelpInfo.ShopFrame.SeasonPass.ClaimReward:FireServer(unpack("rbxassetid://16455735450", "XP", 3))
+            game:GetService("Players").LocalPlayer.PlayerGui.HelpInfo.ShopFrame.SeasonPass.ClaimReward:FireServer(unpack({"rbxassetid://16455735450", "XP", 3}))
         end    
 })
 
