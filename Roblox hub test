@@ -81,18 +81,8 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
         Name = "Fly Gui v3",
         Callback = function()
-                local args = {
-    [1] = "rbxassetid://16455735450",
-    [2] = "XP",
-    [3] = 3
-}
+            game:GetService("Players").LocalPlayer.PlayerGui.HelpInfo.ShopFrame.SeasonPass.ClaimReward:FireServer(unpack("rbxassetid://16455735450", "XP", 3))
 
-game:GetService("Players").LocalPlayer.PlayerGui.HelpInfo.ShopFrame.SeasonPass.ClaimReward:FireServer(unpack(args))
-                        Name = "Successful",
-                        Content = "Fly Gui v3 is successfully executed",
-                        Image = "rbxassetid://4483345998",
-                        Time = 5
-                        })
         end    
 })
 
