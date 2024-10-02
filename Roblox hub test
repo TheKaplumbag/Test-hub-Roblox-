@@ -73,7 +73,7 @@ local Tab = Window:MakeTab({
         Icon = "rbxassetid://4483345998",
         PremiumOnly = false
  })
- 
+
  local Section = Tab:AddSection({
         Name = "Section"
 )}
@@ -82,7 +82,6 @@ Tab:AddButton({
         Name = "Fly Gui v3",
         Callback = function()
             game:GetService("Players").LocalPlayer.PlayerGui.HelpInfo.ShopFrame.SeasonPass.ClaimReward:FireServer(unpack("rbxassetid://16455735450", "XP", 3))
-
         end    
 })
 
