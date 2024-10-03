@@ -49,9 +49,28 @@ local Tab = Window:MakeTab({
 })
 
 Tab:AddButton({
-        Name = "Fly Gui v3",
+        Name = "Give XP",
         Callback = function()
             game:GetService("Players").LocalPlayer.PlayerGui.HelpInfo.ShopFrame.SeasonPass.ClaimReward:FireServer(unpack({"rbxassetid://16455735450", "XP", 3}))
+        end    
+})
+
+local Tab = Window:MakeTab({
+        Name = "Aura craft",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+ })
+
+ local Section = Tab:AddSection({
+        Name = "Section"
+})
+
+Tab:AddButton({
+        Name = "Give coins",
+        Callback = function()
+            while wait() do
+game:GetService("ReplicatedStorage").Remotes.Duplicate:FireServer(unpack(199))
+end
         end    
 })
 
