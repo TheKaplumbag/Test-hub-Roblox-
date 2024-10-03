@@ -68,10 +68,13 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
         Name = "Give coins",
         Callback = function()
-            while wait() do
-game:GetService("ReplicatedStorage").Remotes.Duplicate:FireServer(unpack(199))
-end
-        end    
+            while wait(0.1) do
+            local args = {
+              [1] = 199
+}
+
+game:GetService("ReplicatedStorage").Remotes.Duplicate:FireServer(unpack(args))
+end  
 })
 
 OrionLib:Init()
