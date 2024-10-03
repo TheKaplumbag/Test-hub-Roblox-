@@ -72,7 +72,6 @@ Tab:AddButton({
             local args = {
               [1] = 199
 }
-
 game:GetService("ReplicatedStorage").Remotes.Duplicate:FireServer(unpack(args))
 end  
 })
