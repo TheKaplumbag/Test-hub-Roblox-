@@ -77,4 +77,27 @@ game:GetService("ReplicatedStorage").Remotes.Duplicate:FireServer(unpack(args))
 end  
 })
 
+local Tab = Window:MakeTab({
+        Name = "Army simulator",
+        Icon = "rbxassetid://4483345998",
+        PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+        Name = "Section"
+})
+
+Tab:AddButton({
+        Name = "Name yourself ADMIN",
+        Callback = function()
+           
+local args = {     [1] = "ADMIN" }  game:GetService("ReplicatedStorage").namer:FireServer(unpack(args)) 
+})
+Tab:AddButton({
+        Name = "Give XP",
+        Callback = function()
+           
+local args = {     [1] = 999999999999999999 }  game:GetService("ReplicatedStorage").addXP:FireServer(unpack(args)) 
+})
+
 OrionLib:Init()
