@@ -103,4 +103,21 @@ Tab4:AddButton({
     end
 })
 
+local Tab5 = Window:MakeTab({
+    Name = "Troll people obby",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section5 = Tab5:AddSection({
+    Name = "Section"
+})
+
+Tab4:AddButton({
+    Name = "Get 1k each click",
+    Callback = function()
+        game:GetService("ReplicatedStorage").GR:FireServer() 
+    end
+})
+
 OrionLib:Init()
