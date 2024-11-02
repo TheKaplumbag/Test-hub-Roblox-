@@ -113,7 +113,7 @@ local Section5 = Tab5:AddSection({
     Name = "Section"
 })
 
-Tab4:AddButton({
+Tab5:AddButton({
     Name = "Get 1k each click",
     Callback = function()
         game:GetService("ReplicatedStorage").GR:FireServer() 
