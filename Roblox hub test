@@ -25,19 +25,6 @@ Tab1:AddButton({
     end    
 })
 
-Tab1:AddButton({
-    Name = "Prizzlife script",
-    Callback = function()
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
-        OrionLib:MakeNotification({
-            Name = "Successful",
-            Content = "Prizzlife script successfully executed",
-            Image = "rbxassetid://4483345998",
-            Time = 5
-        })
-    end
-})
-
 local Tab2 = Window:MakeTab({
     Name = "Military life",
     Icon = "rbxassetid://4483345998",
@@ -117,6 +104,28 @@ Tab5:AddButton({
     Name = "Get 1k each click",
     Callback = function()
         game:GetService("ReplicatedStorage").GR:FireServer() 
+    end
+})
+
+local Tab6 = Window:MakeTab({
+    Name = "Prison Life",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section1 = Tab6:AddSection({
+    Name = "PrizzLife"
+})
+Tab6:AddButton({
+    Name = "Prizzlife script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/elliexmln/PrizzLife/main/pladmin.lua'))()
+        OrionLib:MakeNotification({
+            Name = "Successful",
+            Content = "Prizzlife script successfully executed",
+            Image = "rbxassetid://4483345998",
+            Time = 5
+        })
     end
 })
 
