@@ -1,3 +1,5 @@
+
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Kaplumbag Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
@@ -13,7 +15,7 @@ local Section1 = Tab1:AddSection({
 })
 Tab1:AddTextbox({
 	Name = "Teleport",
-	Default = "username",
+	Default = "Broken",
 	TextDisappear = true,
 	Callback = function(targetuser)
 		local plr = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
