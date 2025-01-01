@@ -15,9 +15,9 @@ Tab1:AddTextbox({
 	Name = "Teleport",
 	Default = "username",
 	TextDisappear = true,
-	Callback = function(Value)
+	Callback = function(targetuser)
 		local plr = game.Players.LocalPlayer.HumanoidRootPart.CFrame
-    plr = game.Workspace.Value.HumanoidRootPart.CFrame
+    plr = game:GetService("Workspace").targetuser.HumanoidRootPart.CFrame
 	end	  
 })
 
