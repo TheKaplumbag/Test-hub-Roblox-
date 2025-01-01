@@ -16,8 +16,8 @@ Tab1:AddTextbox({
 	Default = "username",
 	TextDisappear = true,
 	Callback = function(Value)
-		local plr = game.Players.LocalPlayer
-    plr.character.Humanoid.CFrame = Value.HumanoidRootPart.Cframe
+		local plr = game.Players.LocalPlayer.HumanoidRootPart.CFrame
+    plr = game.Workspace.Value.HumanoidRootPart.CFrame
 	end	  
 })
 
