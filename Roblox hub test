@@ -13,11 +13,11 @@ local Section1 = Tab1:AddSection({
 })
 Tab1:AddTextbox({
 	Name = "Teleport",
-	Default = "Enter an username!",
-	TextDisappear = false,
+	Default = "username",
+	TextDisappear = true,
 	Callback = function(Value)
 		local plr = game.Players.LocalPlayer
-    plr.character.Humanoid.CFrame = Value.Humanoid.Cframe
+    plr.character.Humanoid.CFrame = Value.HumanoidRootPart.Cframe
 	end	  
 })
 
