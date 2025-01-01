@@ -11,6 +11,15 @@ local Tab1 = Window:MakeTab({
 local Section1 = Tab1:AddSection({
     Name = "Section"
 })
+Tab1:AddTextbox({
+	Name = "Teleport",
+	Default = "Enter an username!",
+	TextDisappear = true,
+	Callback = function(Value)
+		local plr = game.Players.LocalPlayer
+    plr.char.Humanoid.CFrame = Value.Humanoid.Cframe
+	end	  
+})
 
 Tab1:AddButton({
     Name = "Fly Gui v3",
