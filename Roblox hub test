@@ -19,7 +19,8 @@ Tab1:AddTextbox({
 	TextDisappear = true,
 	Callback = function(targetuser)
 		local plr = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-    plr = game:GetService("Players").targetuser.Character.HumanoidRootPart.CFrame
+    plr = game:GetService("Players"):
+WaitforChild(targetuser).Character.HumanoidRootPart.CFrame
 	end	  
 })
 
