@@ -27,6 +27,13 @@ WaitforChild(targetuser).Character.HumanoidRootPart.CFrame
 Tab1:AddButton({
     Name = "Fly Gui v3",
     Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt"))()
+end
+}) 
+
+Tab1:AddButton({
+    Name = "Fly Gui v3",
+    Callback = function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FLY-GUI-V3-18636"))()
         OrionLib:MakeNotification({
             Name = "Successful",
