@@ -97,7 +97,7 @@ Tab4:AddButton({
 Tab4:AddButton({
     Name = "Give XP",
     Callback = function()
-        local args = { [1] = 999999999999999999 }
+        local args = { [1] = math.huge }
         game:GetService("ReplicatedStorage").addXP:FireServer(unpack(args)) 
     end
 })
