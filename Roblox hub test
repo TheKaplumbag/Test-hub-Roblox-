@@ -132,7 +132,7 @@ local Tab6 = Window:MakeTab({
     PremiumOnly = false
 })
 
-local Section1 = Tab6:AddSection({
+local Section6 = Tab6:AddSection({
     Name = "PrizzLife"
 })
 Tab6:AddButton({
@@ -145,6 +145,22 @@ Tab6:AddButton({
             Image = "rbxassetid://4483345998",
             Time = 5
         })
+    end
+})
+
+local Tab7 = Window:MakeTab({
+    Name = "Prison Life",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section7 = Tab7:AddSection({
+    Name = "PrizzLife"
+})
+Tab7:AddButton({
+    Name = "Da Hood, Da Strike and more lock script hub",
+    Callback = function()
+       loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2c49f13d52789471d283583f05ee91df.lua"))()
     end
 })
 
